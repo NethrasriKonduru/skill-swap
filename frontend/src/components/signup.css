@@ -1,0 +1,154 @@
+.signup-container {
+    min-height: 100vh;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  
+  .signup-image-section {
+    display: none;
+    width: 50%;
+    background: linear-gradient(to bottom right, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--primary)));
+    position: relative;
+    overflow: hidden;
+  }
+  
+  @media (min-width: 1024px) {
+    .signup-image-section {
+      display: flex;
+    }
+  }
+  
+  .signup-vector-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .signup-form-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: hsl(var(--background));
+  }
+  
+  @media (min-width: 1024px) {
+    .signup-form-section {
+      width: 50%;
+    }
+  }
+  
+  .signup-form-wrapper {
+    width: 100%;
+    max-width: 28rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .signup-header {
+    text-align: center;
+  }
+  
+  .signup-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .signup-subtitle {
+    margin-top: 0.5rem;
+    color: hsl(var(--muted-foreground));
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .signup-name-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .signup-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .signup-submit-btn {
+    width: 100%;
+  }
+  
+  .signup-divider {
+    position: relative;
+  }
+  
+  .signup-divider-line {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .signup-divider-border {
+    width: 100%;
+    border-top: 1px solid hsl(var(--border));
+  }
+  
+  .signup-divider-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
+  
+  .signup-divider-text-content {
+    background: hsl(var(--background));
+    padding: 0 0.5rem;
+    color: hsl(var(--muted-foreground));
+  }
+  
+  .signup-oauth-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .signup-oauth-btn {
+    width: 100%;
+  }
+  
+  .signup-oauth-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+  }
+  
+  .signup-signin-link {
+    text-align: center;
+    font-size: 0.875rem;
+    color: hsl(var(--muted-foreground));
+  }
+  
+  .signup-signin-link-text {
+    color: hsl(var(--primary));
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .signup-signin-link-text:hover {
+    text-decoration: underline;
+  }
+  

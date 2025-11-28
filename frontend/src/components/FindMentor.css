@@ -1,0 +1,346 @@
+/* 🌤️ Page Layout */
+.page-container {
+    min-height: 100vh;
+    padding: 2rem 4rem;
+    background: linear-gradient(135deg, #f0f4ff, #eef2ff, #e0e7ff);
+    color: #1e3a8a;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* 🔙 Back Button */
+  .back-btn {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    background: #e0ecff;
+    padding: 0.4rem 0.9rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
+  }
+  
+  .back-btn:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateX(-3px);
+  }
+  
+  /* 🪩 Title */
+  h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-top: 1rem;
+  }
+  
+  .page-subtitle {
+    text-align: center;
+    color: #475569;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  
+  /* 🪙 Verification Bar */
+  .verification-callout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 1rem;
+    padding: 1.3rem 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    border-left: 6px solid #2563eb;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .verification-callout.verified {
+    border-left-color: #10b981;
+  }
+  
+  .inline-badge {
+    background: #2563eb;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+  }
+  
+  .callout-progress {
+    margin-top: 0.4rem;
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .callout-progress span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+    transition: width 0.5s ease;
+  }
+  
+  .coins-available {
+    color: #047857;
+    font-weight: 600;
+    background: #ecfdf5;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.25);
+  }
+  
+  /* 🔍 Filter Section */
+  .mentor-filter-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-radius: 1rem;
+    padding: 0.8rem 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+  }
+  
+  .filter-group label {
+    color: #1e3a8a;
+    font-weight: 600;
+    margin-right: 0.5rem;
+  }
+  
+  .filter-group select {
+    background: #eef2ff;
+    border: none;
+    color: #1e3a8a;
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem;
+    font-weight: 500;
+    outline: none;
+  }
+  
+  .refresh-btn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .refresh-btn:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+  }
+  
+  /* ⚠️ Alerts */
+  .page-alert {
+    text-align: center;
+    border-radius: 10px;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  .page-alert-success {
+    background: #ecfdf5;
+    color: #047857;
+    border: 1px solid #a7f3d0;
+  }
+  
+  .page-alert-error {
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+  }
+  
+  /* 🧠 Mentor Cards */
+  .recommendation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .recommendation-card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    padding: 1.2rem 1.5rem;
+    transition: all 0.3s ease;
+    border-top: 4px solid transparent;
+    animation: fadeUp 0.5s ease;
+  }
+  
+  .recommendation-card.verified {
+    border-top: 4px solid #10b981;
+  }
+  
+  .recommendation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.2);
+  }
+  
+  /* 👤 Header */
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #e0e7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #1e3a8a;
+    font-size: 1.3rem;
+    border: 2px solid #2563eb;
+  }
+  
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .card-header h3 {
+    margin: 0;
+    color: #1e3a8a;
+  }
+  
+  .match-pill {
+    color: #475569;
+    font-size: 0.9rem;
+  }
+  
+  /* 💡 Skill Tags */
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.4rem;
+  }
+  
+  .tag {
+    background: #e0ecff;
+    color: #1e40af;
+    border-radius: 8px;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .tag:hover {
+    background: #2563eb;
+    color: white;
+  }
+  
+  .tag.muted {
+    background: #f1f5f9;
+    color: #475569;
+  }
+  
+  /* ⚙️ Footer Buttons */
+  .card-footer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .ghost-btn {
+    background: white;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+    border-radius: 8px;
+    padding: 0.4rem 0.9rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .ghost-btn:hover {
+    background: #2563eb;
+    color: white;
+  }
+  
+  .register-btn {
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .register-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #1d4ed8, #2563eb);
+  }
+  
+  .status-chip {
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.25rem 0.6rem;
+    font-size: 0.85rem;
+  }
+  
+  .status-chip.completed {
+    color: #10b981;
+  }
+  
+  .status-chip.registered {
+    color: #2563eb;
+  }
+  
+  /* ✨ Animations */
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* 📱 Responsive */
+  @media (max-width: 768px) {
+    .page-container {
+      padding: 1.2rem;
+    }
+  
+    .verification-callout {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  

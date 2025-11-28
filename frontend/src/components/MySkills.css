@@ -1,0 +1,158 @@
+/* 🌸 Lavender background + center content */
+.myskills-container {
+  padding: 3rem;
+  background: #f7f5ff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Heading */
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #4b0082;
+  margin-bottom: 0.5rem;
+}
+
+.page-desc {
+  text-align: center;
+  color: #6b6280;
+  margin-bottom: 1rem;
+}
+
+/* 🔲 White Card Box */
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(75, 0, 130, 0.15);
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Titles */
+.card-title {
+  font-size: 1.4rem;
+  color: #4c0080;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+/* Input Row */
+.input-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  border: 1px solid #d3c8ff;
+  font-size: 1rem;
+}
+
+/* Purple Button */
+.btn-purple {
+  background: linear-gradient(135deg, #8a00ff, #a44fff);
+  border: none;
+  color: white;
+  padding: 0.8rem 1.4rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-purple:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(138, 0, 255, 0.3);
+}
+
+/* Skill Pills */
+.skill-tags, .subtopic-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.2rem;
+}
+
+.skill-pill {
+  background: #e9ddff;
+  padding: 0.55rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: 0.2s;
+}
+
+.skill-pill.active {
+  background: #ffe97a;
+}
+
+/* Remove button inside pill */
+.pill-delete {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #6a00c7;
+}
+
+/* Subtopic Tags */
+.subtopic-pill {
+  background: #eadcff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* Summary Box */
+.summary-box {
+  background: #faf6ff;
+  border-radius: 14px;
+  padding: 1.5rem;
+  border: 1px solid #ecdfff;
+  margin-bottom: 1rem;
+}
+
+.summary-box h3 {
+  margin-bottom: 0.4rem;
+  color: #5a0ea1;
+}
+
+/* Green Save Button */
+.save-btn {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: linear-gradient(135deg, #00c853, #00e676);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.save-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 200, 83, 0.4);
+}
+
+/* Success message */
+.save-msg {
+  text-align: center;
+  color: #0f8a29;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
